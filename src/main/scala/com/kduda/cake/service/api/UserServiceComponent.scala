@@ -7,6 +7,8 @@ trait UserServiceComponent {
 
   trait UserService {
     def findAll: List[User]
+
     def save(user: User)
   }
+
 }
