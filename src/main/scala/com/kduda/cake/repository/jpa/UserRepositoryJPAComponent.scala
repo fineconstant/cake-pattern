@@ -1,8 +1,7 @@
-package com.kduda.cake.repository.impl
+package com.kduda.cake.repository.jpa
 
-import com.kduda.cake.model.User
-import com.kduda.cake.repository.api.UserRepositoryComponent
-
+import com.kduda.cake.common.User
+import com.kduda.cake.repository.UserRepositoryComponent
 trait UserRepositoryJPAComponent extends UserRepositoryComponent {
   // TODO: use some persistence mechanism
   var users: List[User]

@@ -1,6 +1,5 @@
-package com.kduda.cake.repository.api
-
-import com.kduda.cake.model.User
+package com.kduda.cake.repository
+import com.kduda.cake.common.User
 
 trait UserRepositoryComponent {
   def userLocator: UserLocator

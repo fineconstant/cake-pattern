@@ -1,6 +1,6 @@
 package com.kduda.cake
 
-import com.kduda.cake.model.User
+import com.kduda.cake.common.User
 
 object CakePatternApp {
   def main(args: Array[String]): Unit = {

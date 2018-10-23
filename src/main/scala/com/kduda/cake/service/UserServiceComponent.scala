@@ -1,6 +1,5 @@
-package com.kduda.cake.service.api
-
-import com.kduda.cake.model.User
+package com.kduda.cake.service
+import com.kduda.cake.common.User
 
 trait UserServiceComponent {
   def userService: UserService

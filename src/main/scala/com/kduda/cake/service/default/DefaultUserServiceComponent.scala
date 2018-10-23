@@ -1,9 +1,8 @@
-package com.kduda.cake.service.impl
+package com.kduda.cake.service.default
 
-import com.kduda.cake.model.User
-import com.kduda.cake.repository.api.UserRepositoryComponent
-import com.kduda.cake.service.api.UserServiceComponent
-
+import com.kduda.cake.common.User
+import com.kduda.cake.repository.UserRepositoryComponent
+import com.kduda.cake.service.UserServiceComponent
 trait DefaultUserServiceComponent extends UserServiceComponent {
   this: UserRepositoryComponent =>
 

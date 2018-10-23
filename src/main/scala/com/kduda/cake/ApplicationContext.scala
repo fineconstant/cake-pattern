@@ -1,9 +1,9 @@
 package com.kduda.cake
 
-import com.kduda.cake.model.User
-import com.kduda.cake.repository.impl.UserRepositoryJPAComponent
-import com.kduda.cake.service.api.UserServiceComponent
-import com.kduda.cake.service.impl.DefaultUserServiceComponent
+import com.kduda.cake.common.User
+import com.kduda.cake.repository.jpa.UserRepositoryJPAComponent
+import com.kduda.cake.service.UserServiceComponent
+import com.kduda.cake.service.default.DefaultUserServiceComponent
 
 object ApplicationContext {
   /**

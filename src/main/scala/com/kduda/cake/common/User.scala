@@ -1,3 +1,3 @@
-package com.kduda.cake.model
+package com.kduda.cake.common
 
 sealed case class User(name: String)
