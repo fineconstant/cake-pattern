@@ -1,7 +1,7 @@
 package com.kduda.cake
 
 import com.kduda.cake.common.User
-import com.kduda.cake.repository.jpa.UserRepositoryJPAComponent
+import com.kduda.cake.repository.memory.UserRepositoryInMemoryComponent
 import com.kduda.cake.service.UserServiceComponent
 import com.kduda.cake.service.default.DefaultUserServiceComponent
 
@@ -15,7 +15,7 @@ object ApplicationContext {
     * Finally we define a userService val for accessing the service methods.
     */
   val userServiceComponent: UserServiceComponent =
-    new DefaultUserServiceComponent with UserRepositoryJPAComponent {
+    new DefaultUserServiceComponent with UserRepositoryInMemoryComponent {
       override var users: List[User] = List(User("John"), User("Marty"))
     }
 

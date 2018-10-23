@@ -1,9 +1,9 @@
-package com.kduda.cake.repository.jpa
+package com.kduda.cake.repository.memory
 
 import com.kduda.cake.common.User
 import com.kduda.cake.repository.UserRepositoryComponent
-trait UserRepositoryJPAComponent extends UserRepositoryComponent {
-  // TODO: use some persistence mechanism
+
+trait UserRepositoryInMemoryComponent extends UserRepositoryComponent {
   var users: List[User]
 
   def userLocator: UserLocator = new UserLocatorJpa
