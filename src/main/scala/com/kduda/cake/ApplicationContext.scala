@@ -6,6 +6,7 @@ import com.kduda.cake.service.UserServiceComponent
 import com.kduda.cake.service.default.DefaultUserServiceComponent
 
 object ApplicationContext {
+
   /**
     * We first define and instantiate a UserServiceComponent, mixing in the appropriate repository implementation,
     * as required by the self-type annotation described earlier.
@@ -16,9 +17,9 @@ object ApplicationContext {
     */
   val userServiceComponent: UserServiceComponent =
     new DefaultUserServiceComponent with UserRepositoryInMemoryComponent {
-      override var users: List[User] = List(User("John"), User("Marty"))
+      override var usersManager: List[User] = List(User("Rick"), User("Morty"))
     }
 
-  val userService = userServiceComponent.userService
+  val userService: UserServiceComponent#UserService = userServiceComponent.userService
 
 }
